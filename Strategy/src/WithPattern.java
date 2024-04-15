@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WithPattern {
     public static void main(String[] args) {
         WithPattern strategy = new WithPattern();
-        System.out.println(strategy.perform(200, DiscountType.BLACK_FRIDAY));
+        System.out.println(strategy.perform(200, DiscountType.PRE_ORDER));
     }
 
     public enum DiscountType {
