@@ -5,7 +5,7 @@ public class Main {
         acc.changeStatus(LoginStatus.EXPIRED);
         System.out.println("-------------------- \n");
 
-        acc = createAccount("doibuon@gmai.com", "192.168.1.1");
+        acc = createAccount("doibuo1n@gmai.com", "1921.168.1.1");
         acc.login();
 
 
@@ -18,6 +18,7 @@ public class Main {
         accountService.attach(new Mailer());
         accountService.attach(new Protector());
         accountService.attach(new JWTBuilder());
+        accountService.attach(new FailureHandler());
         return accountService;
     }
 
